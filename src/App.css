@@ -12,6 +12,7 @@ body {
 
 main {
   max-width: 420px;
+  min-width: 320px;
   min-height: 420px;
   margin: 100px auto 0; /*haut gauche-droite bas*/
   border-radius: 10px;
@@ -53,6 +54,7 @@ main {
 .city-name {
   font-family:Arial, Helvetica, sans-serif;
   font-size: 60px;
+  font-weight: 100;
   margin: 40px auto 10px;
 }
 
@@ -64,19 +66,32 @@ main {
 }
 
 .temperature {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 15px;
+}
+
+.wind, .humidity {
+  font-size: 20px;
+  margin-top: 5px;
 }
 
 .info-icon {
   display: block;
-  margin: 0 auto;
-  width: 160px;
-  height: 160px;
+  margin: 0 auto ;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
 }
 
 .error-information {
   margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
